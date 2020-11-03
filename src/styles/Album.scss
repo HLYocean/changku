@@ -1,0 +1,75 @@
+.album {
+  background-color: #000;
+
+  img {
+    width: 100vw;
+  }
+
+  .icon {
+    position: static;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  p {
+    padding: 0 10px;
+    line-height: 25px;
+    color: rgba(#fff, 0.5);
+
+    a {
+      color: #60c0ef !important;
+    }
+  }
+
+  p.normal_title:first-of-type {
+    text-align: center;
+    color: rgba(#fff, 0.8);
+  }
+
+  p.normal_title:nth-of-type(2) {
+    text-align: center;
+    color: rgba(#fff, 0.5);
+  }
+
+
+  h5 {
+    padding: 15px 10px;
+  }
+
+  .video-react {
+    height: 40vh;
+  }
+
+  .video-react-controls-enabled, .video-react-paused, .video-react-fluid, .video-react-user-active, .video-react {
+    width: 100%;
+  }
+
+  .video-react-video {
+    width: 100%;
+  }
+
+  .video-react-poster {
+    background-size: cover !important;
+    filter: brightness(0.6);
+  }
+
+
+  .video-react .video-react-big-play-button {
+    border: none;
+    background-color: transparent;
+    font-size: 7em;
+    line-height: 1.5em;
+    height: 1.5em;
+
+  }
+
+  strong {
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}

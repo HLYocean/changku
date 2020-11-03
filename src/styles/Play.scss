@@ -1,0 +1,146 @@
+html {
+  background-color: #000;
+}
+
+.play {
+  background-color: #000;
+  color: #fff;
+
+  .info {
+    text-align: center;
+
+    span {
+      font-size: 10px;
+      color: rgba(#9b9b9b, 0.7);
+
+    }
+
+    h3 {
+      margin: 40px 20px 20px 20px;
+      text-align: center;
+    }
+
+    p {
+      margin: 40px 20px;
+      text-align: left;
+      line-height: 30px;
+      color: #9b9b9b;
+    }
+  }
+}
+
+header {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 10px;
+    z-index: 9;
+  }
+
+  .video-react {
+    height: 40vh;
+  }
+
+  .video-react-controls-enabled, .video-react-paused, .video-react-fluid, .video-react-user-active, .video-react {
+    width: 100%;
+  }
+
+  .video-react-video {
+    width: 100%;
+  }
+
+  .video-react-poster {
+    background-size: cover !important;
+    filter: brightness(0.6);
+  }
+
+
+  .video-react .video-react-big-play-button {
+    border: none;
+    background-color: transparent;
+    font-size: 7em;
+    line-height: 1.5em;
+    height: 1.5em;
+
+  }
+}
+
+.relate {
+  padding: 0 20px;
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    span {
+      font-size: 12px;
+      color: #5c5d58;
+    }
+  }
+
+  ul.relate-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    li.relate-item {
+      position: relative;
+      width: 40vw;
+      margin: 0 5px;
+      display: inline-block;
+
+      .thumb {
+        position: relative;
+        height: 25vw;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          filter: brightness(0.6);
+        }
+
+        span {
+          position: absolute;
+          bottom: 15px;
+          left: 10px;
+          font-size: 20px;
+          transform: scale(0.5);
+          transform-origin: top left;
+          color: white;
+        }
+      }
+
+      h5 {
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        width: 83%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes play_move {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+
+  }
+}
+
+.play {
+  animation: play_move 3s;
+  -webkit-animation: play_move 3s;
+}

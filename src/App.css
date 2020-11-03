@@ -1,0 +1,48 @@
+.am-navbar, .am-navbar-light {
+    background-color: #000 !important;
+}
+
+.am-tabs-default-bar-content {
+    background-color: #000 !important;
+}
+
+.am-navbar-left, .am-navbar-title, .am-navbar-right {
+    flex: none !important;
+}
+
+.am-navbar-left {
+    width: 10% !important;
+}
+
+.am-navbar-title {
+    width: 70% !important;
+}
+
+a {
+    color: #979797 !important;
+}
+
+a.active span {
+    color: #fff;
+}
+
+
+.am-navbar-right {
+    width: 10% !important;
+}
+
+.am-tabs-default-bar-top, .am-tabs-default-bar-tab::after {
+    background-color: #000 !important;
+}
+
+.am-navbar {
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    left: 5.4%;
+    top: 32.28%;
+    color: #fff;
+    transform: scale(0.6);
+}

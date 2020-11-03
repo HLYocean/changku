@@ -1,0 +1,64 @@
+.series_detail {
+  background-color: #000;
+  color: #fff;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 0 0;
+
+    .title {
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+
+  .play {
+    position: absolute;
+    z-index: -1;
+    margin-top: -20px;
+
+    .video-react {
+      height: 40vh;
+    }
+
+    .video-react-controls-enabled, .video-react-paused, .video-react-fluid, .video-react-user-active, .video-react {
+      width: 100%;
+    }
+
+    .video-react-video {
+      width: 100%;
+    }
+
+    .video-react-poster {
+      background-size: contain !important;
+      filter: brightness(0.6);
+    }
+
+    .video-react .video-react-big-play-button {
+      border: none;
+      background-color: transparent;
+      font-size: 7em;
+      line-height: 1.5em;
+      height: 1.5em;
+
+    }
+
+    .introduction {
+      padding: 0 10px;
+      color: rgba(#fff, 0.6);
+
+      h2 {
+        color: #fff;
+      }
+
+      div {
+        padding: 5px 0;
+      }
+
+
+    }
+  }
+
+}

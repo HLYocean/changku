@@ -1,0 +1,77 @@
+.albumList {
+  h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .item {
+    position: relative;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      filter: brightness(0.6);
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white;
+      padding: 0 15px;
+      width: calc(100% - 30px);
+
+      span {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.753);
+        line-height: 3em;
+        padding-right: 30px;
+      }
+
+      h3 {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      h5 {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &.col {
+    overflow: hidden;
+
+    .item {
+      &:not(:first-of-type) {
+        width: 50%;
+        float: left;
+
+        .info {
+          span {
+            font-size: 12px;
+          }
+
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes albumList_move {
+  from {
+    margin-top: 100px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+.albumList {
+  animation: albumList_move 3s;
+  -webkit-animation: albumList_move 3s;
+}
